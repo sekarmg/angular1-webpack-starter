@@ -1,19 +1,21 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/app/app.js',
   output: {
     path: path.join(__dirname, '..', 'dist'),
     filename: 'bundle.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack Starter Angular - kitconcept',
-      template: 'src/index.html',
+      title: 'karmasoc webui',
+      template: 'src/index.ejs',
+      pkg: require("../package.json"),
       minify: {
+        hash: true,
         collapseWhitespace: true,
         removeComments: true,
         removeRedundantAttributes: true,

@@ -4,8 +4,8 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import AppComponent from './app.component.js';
 import Common from './common/common';
-import Components from './components/components';
-import './styles.scss';
+import Components from './common/common.js';
+import './app.style.css';
 
 angular.module('myApp', [
   uiRouter,

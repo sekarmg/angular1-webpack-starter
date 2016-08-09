@@ -257,8 +257,8 @@ Travis CI
     - sh -e /etc/init.d/xvfb start
   install:
   - npm install -g babel
-  - npm install -g webpack
-  - npm install -g webpack-dev-server
+  - npm install -g webpack@1.13.1
+  - npm install -g webpack-dev-server@1.14.0
   - npm install -g eslint
   - npm install
   script:
