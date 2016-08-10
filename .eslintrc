@@ -18,6 +18,9 @@
 		"no-loop-func": 1,
 		"space-before-function-paren": [2, "never"] 
 	},
+  "parserOptions": {
+    "sourceType": "module"
+  },  
   "env": {
     "es6": true,
     "browser": true,

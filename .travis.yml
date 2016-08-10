@@ -12,10 +12,10 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 install:
-- npm install -g babel
-- npm install -g webpack
-- npm install -g webpack-dev-server
-- npm install -g eslint
+- npm install babel -g
+- npm install webpack -g
+- npm install webpack-dev-server -g
+- npm install eslint -g
 - npm install
 - sudo pip install -r requirements.txt
 script:
